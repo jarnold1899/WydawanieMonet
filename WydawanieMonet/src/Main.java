@@ -1,7 +1,7 @@
 public class Main {
 
 	static int[] coins = { 1, 2, 5, 7, 10, 13, 20 };
-	static int value = 55;
+	static int value = 117;
 	static int[][] coinsSpend = new int[value + 1][];
 
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class Main {
 
 			}
 		}
-		System.out.println(T[value]);
+		System.out.println("Ilosc monet: " + T[value]);
 		for (int i = 0; i <= 20; i++) {
 			if (coinsSpend[value][i] > 0) {
 				System.out.println("Moneta: " + i + " ilosc: " + coinsSpend[value][i]);
